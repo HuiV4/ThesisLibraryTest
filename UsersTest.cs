@@ -6,6 +6,13 @@ namespace ThesisLibraryTest
     [TestClass]
     public class UserTest
     {
+        /*
+            Students, professors and admins are always a type of user and inherit the base properties. 
+            By loading a userList the special parameters are given to distinguish every usertype. 
+            Therefore I don't think it is necessary to test every usertype, since they use the 
+            loading function from the Users class!
+        */
+
         [TestMethod]
         public void LoadUsersList_LoadedData_IsNotNull()
         {
